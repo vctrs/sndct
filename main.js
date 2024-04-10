@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import * as THREE from 'three';
+=======
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js";
+>>>>>>> f745aaca873312892b0122d14feaf8e364d7e7d8
 console.log('here');
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
