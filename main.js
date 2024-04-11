@@ -18,7 +18,7 @@ async function  init() {
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
     //environment
-    const path = './public/textures/skybox/';
+    const path = './textures/skybox/';
                     const format = '.jpg';
                     const urls = [
                         path + 'px' + format, path + 'nx' + format,
@@ -46,7 +46,7 @@ async function  init() {
 	// const onError = function (e) { console.log(e)};
     //load object
     const loader = new OBJLoader();
-    object = await loader.loadAsync('./public/models/clip.obj');
+    object = await loader.loadAsync('./models/clip.obj');
     
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
     const material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );

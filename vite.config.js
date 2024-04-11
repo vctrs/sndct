@@ -3,7 +3,7 @@ import { defineConfig} from 'vite'
 
 export default defineConfig({
  build: {
-    assetsInclude: ['/models/*.obj', '/textures/skybox/*.jpg'],
+    
     target: 'esnext',
     rollupOptions: 
     {
