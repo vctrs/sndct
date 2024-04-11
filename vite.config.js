@@ -3,7 +3,7 @@ import { defineConfig} from 'vite'
 
 export default defineConfig({
  build: {
-    base: "./sndct",
+    base: "/sndct/",
     minify: false,
     target: 'esnext',
     rollupOptions: 
