@@ -12,8 +12,8 @@ AFRAME.registerComponent('click-move', {
     // });
    
     el.addEventListener('click', function () {
-
-        window.open(data, "_self");
+      window.open(data, "_self");
+     // setTimeout( function() { window.open(data, "_self"); }, 0);
     });
 
   }
