@@ -2,8 +2,9 @@ import { resolve} from 'path'
 import { defineConfig} from 'vite'
 
 export default defineConfig({
+ base: "/sndct/",
  build: {
-    base: "/sndct/",
+    
     minify: false,
     target: 'esnext',
     rollupOptions: 
