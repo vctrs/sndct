@@ -2,11 +2,7 @@ import { resolve} from 'path'
 import { defineConfig} from 'vite'
 
 export default defineConfig({
-<<<<<<< HEAD
     base: "/sndct/",
-=======
- base: "/sndct/",
->>>>>>> a22711287f9f021d7570e70fb5a266f35319d9af
  build: {
     
     minify: false,
