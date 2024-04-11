@@ -3,7 +3,7 @@ import { defineConfig} from 'vite'
 
 export default defineConfig({
  build: {
-    
+    minify: false,
     target: 'esnext',
     rollupOptions: 
     {
@@ -11,10 +11,15 @@ export default defineConfig({
         {
         main: resolve(__dirname, 'index.html'),
         // main2: resolve(__dirname, 'pano1.html'),
-        main2: resolve(__dirname, 'pano2.html'),
-        main3: resolve(__dirname, 'object1.html'),
+        pano2: resolve(__dirname, 'pano2.html'),
+        object: resolve(__dirname, 'object1.html'),
 
         },
+        output: {
+            entryFileNames: `assets/[name].js`,
+            chunkFileNames: `assets/[name].js`,
+            assetFileNames: `assets/[name].[ext]`
+          }
     },
  },
 })
